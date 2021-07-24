@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import ContactList from "./contact-list";
 import { initializeContacts } from './reducers/contactReducer'
+import ContactList from "./contact-list";
+import ContactForm from "./contact-form";
+import './app.css'
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Address Book</h1>
+			<ContactForm />
 			<ContactList />
 		</div>
 	);

@@ -1,0 +1,42 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 32px;
+    border-style: solid; border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.contact-form__fields-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact-form__fields-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form__select-box {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex: 0 0 30%;
+    max-width: 33.333333%;
+}
+
+.contact-form__buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+
+button:first-child {
+    margin-right: 20px;
+}
