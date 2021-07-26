@@ -1,12 +1,14 @@
 import { connect } from 'react-redux'
+import ContactCard from './contact-card'
+import './contact-list.css'
 
 const ContactList = (props) => {
     return (
-        props.contacts.map(contact =>
-            <div key={contact.id}>
-                <div>{contact.firstName} {contact.lastName}</div>
-            </div>
-        )
+        <div className='contact-list-container'>
+            {props.contacts.map(contact =>
+                <ContactCard key={contact.id} contact={contact} />
+            )}
+        </div>
 
     )
 }

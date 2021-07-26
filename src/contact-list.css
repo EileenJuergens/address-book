@@ -1,0 +1,14 @@
+.contact-list-container {
+    margin: 32px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #fff;
+    padding: 10px;
+    max-height: 582px;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

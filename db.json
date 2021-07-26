@@ -3,22 +3,61 @@
     {
       "id": 21149,
       "firstName": "Laura",
-      "lastName": "Jung"
+      "lastName": "Jung",
+      "streetName": "Carrer de Marina 412",
+      "zipCode": "08025",
+      "city": "Barcelona",
+      "phoneNumber": "454787698",
+      "email": "laura.jung@gmail.com"
     },
     {
       "id": 21441,
       "firstName": "Paul",
-      "lastName": "Black"
+      "lastName": "Black",
+      "streetName": "Carrer de Industria 123",
+      "zipCode": "08025",
+      "city": "Barcelona",
+      "phoneNumber": "454787698",
+      "email": "p.black@gmail.com"
     },
     {
       "id": 71159,
       "firstName": "Kara",
-      "lastName": "White"
+      "lastName": "White",
+      "streetName": "Backer Street 4",
+      "zipCode": "08025",
+      "city": "London",
+      "phoneNumber": "454787698",
+      "email": "kara.white@gmail.com"
     },
     {
       "id": 31169,
       "firstName": "Millie",
-      "lastName": "Blues"
+      "lastName": "Blues",
+      "streetName": "Main Street 744",
+      "zipCode": "08025",
+      "city": "London",
+      "phoneNumber": "454787698",
+      "email": "millie.b@gmail.com"
+    },
+    {
+      "id": "25736",
+      "firstName": "Eileen",
+      "lastName": "Jürgens",
+      "streetName": "Carrer de Sardenya 386, Bajos 4",
+      "zipCode": "08025",
+      "city": "Barcelona",
+      "phoneNumber": "689603229",
+      "email": "juergens.eileen@gmail.com"
+    },
+    {
+      "id": "62035",
+      "firstName": "Eileen",
+      "lastName": "Jürgens",
+      "streetName": "Unter dem Dornbusch 17",
+      "zipCode": "31552",
+      "city": "Apelern",
+      "email": "juergens.eileen@gmail.com"
     }
   ]
 }

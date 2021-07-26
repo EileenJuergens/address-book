@@ -11,6 +11,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
 
     const handleSubmitForm = (newContact) => {
         dispatch(createContact(newContact))
+        dispatch(reset('contactForm'))
     }
 
 
@@ -22,7 +23,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                         <Field
                             name="firstName"
                             component={InputField}
-                            label="first name" x
+                            label="first name"
                             placeholder="Insert first name" />
                     </div>
                     <div className='contact-form__select-box'>
