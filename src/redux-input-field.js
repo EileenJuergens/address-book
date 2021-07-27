@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './input-field.css'
+import './redux-input-field.css'
 
-function InputField({ placeholder = "", input, name, type = "text", label, id }) {
-    const [valueState, setValueState] = useState(input.value ? input.value : "");
+function ReduxInputField({ placeholder = "", input = '', name, type = "text", label, id }) {
+    const [valueState, setValueState] = useState("");
 
     useEffect(() => {
         setValueState(input.value);
@@ -33,7 +33,7 @@ function InputField({ placeholder = "", input, name, type = "text", label, id })
     );
 }
 
-InputField.propTypes = {
+ReduxInputField.propTypes = {
     placeholder: PropTypes.string,
     label: PropTypes.string,
     type: PropTypes.string,
@@ -42,4 +42,4 @@ InputField.propTypes = {
     id: PropTypes.string
 };
 
-export default InputField;
+export default ReduxInputField;

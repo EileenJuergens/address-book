@@ -1,13 +1,66 @@
 .contact-list-container {
     margin: 32px;
+}
+
+.contact-list {
     border-color: #ccc;
     border-style: solid;
     border-width: 1px;
-    background-color: #fff;
     padding: 10px;
     max-height: 582px;
-    overflow-y: auto;
-    overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.contact-list-header {
+    display: flex;
+    flex-direction: row;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: 0;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #555555;
+}
+
+.contact-list-header > .input-field {
+    width: 40%;
+}
+
+.contact-list__sort-container {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact-list__sort-value {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 8px;
+
+}
+
+.contact-list__sort-icon-ASC {
+    width: 0;
+    height: 0;
+    bottom: 5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #949494;
+}
+
+.contact-list__sort-icon-DESC {
+    width: 0;
+    height: 0;
+    bottom: 5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #949494;
+    transform: rotate(180deg);
 }

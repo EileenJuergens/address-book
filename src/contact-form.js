@@ -1,7 +1,7 @@
 import './contact-form.css'
 import { Field, reduxForm } from 'redux-form'
 import { useDispatch } from 'react-redux'
-import InputField from './input-field'
+import ReduxInputField from './redux-input-field'
 import Button from './button'
 import { createContact } from './reducers/contactReducer'
 
@@ -22,14 +22,14 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                     <div className='contact-form__select-box'>
                         <Field
                             name="firstName"
-                            component={InputField}
+                            component={ReduxInputField}
                             label="first name"
                             placeholder="Insert first name" />
                     </div>
                     <div className='contact-form__select-box'>
                         <Field
                             name="lastName"
-                            component={InputField}
+                            component={ReduxInputField}
                             label="last name"
                             placeholder="Insert last name" />
                     </div>
@@ -38,14 +38,14 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                     <div className='contact-form__select-box'>
                         <Field
                             name="streetName"
-                            component={InputField}
+                            component={ReduxInputField}
                             label="address"
                             placeholder="Insert address" />
                     </div>
                     <div className='contact-form__select-box'>
                         <Field
                             name="zipCode"
-                            component={InputField}
+                            component={ReduxInputField}
                             type="number"
                             label="zip code"
                             placeholder="Insert ZIP code" />
@@ -53,7 +53,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                     <div className='contact-form__select-box'>
                         <Field
                             name="city"
-                            component={InputField}
+                            component={ReduxInputField}
                             label="city"
                             placeholder="Insert city" />
                     </div>
@@ -62,7 +62,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                     <div className='contact-form__select-box'>
                         <Field
                             name="phoneNumber"
-                            component={InputField}
+                            component={ReduxInputField}
                             type="number"
                             label="phone number"
                             placeholder="Insert phone number" />
@@ -70,7 +70,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
                     <div className='contact-form__select-box'>
                         <Field
                             name="email"
-                            component={InputField}
+                            component={ReduxInputField}
                             label="email"
                             placeholder="Insert email" />
                     </div>
