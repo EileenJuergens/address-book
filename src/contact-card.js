@@ -23,7 +23,7 @@ function ContactCard({ contact }) {
 }
 
 ContactCard.propTypes = {
-    contact: PropTypes.object.isRequired
+	contact: PropTypes.object.isRequired
 };
 
 export default ContactCard;

@@ -58,6 +58,25 @@
       "zipCode": "31552",
       "city": "Apelern",
       "email": "juergens.eileen@gmail.com"
+    },
+    {
+      "id": "11967",
+      "firstName": "Eileen",
+      "lastName": "Jürgens",
+      "streetName": "Carrer de Sardenya 386, Bajos 4",
+      "zipCode": "08025",
+      "city": "Barcelona",
+      "phoneNumber": "689603229",
+      "email": "juergens.eileen@gmail.com"
+    },
+    {
+      "id": "74905",
+      "firstName": "Eileen",
+      "lastName": "Jürgens",
+      "streetName": "Unter dem Dornbusch 17",
+      "zipCode": "31552",
+      "city": "Apelern",
+      "email": "juergens.eileen@gmail.com"
     }
   ]
 }
