@@ -1,13 +1,13 @@
-import axios from 'axios'
+import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001/contacts'
+const baseUrl = 'http://localhost:3001/contacts';
 
 export const getAll = async () => {
-  const response = await axios.get(baseUrl)
-  return response.data
-}
+  const response = await axios.get(baseUrl);
+  return response.data;
+};
 
-const getId = () => (100000 * Math.random()).toFixed(0)
+const getId = () => (100000 * Math.random()).toFixed(0);
 
 export const createNew = async ({ firstName, lastName, streetName, zipCode, city, phoneNumber, email }) => {
   const object = {
@@ -19,7 +19,8 @@ export const createNew = async ({ firstName, lastName, streetName, zipCode, city
     city,
     phoneNumber,
     email
-  }
-  const response = await axios.post(baseUrl, object)
-  return response.data
-}
+  };
+
+  const response = await axios.post(baseUrl, object);
+  return response.data;
+};
