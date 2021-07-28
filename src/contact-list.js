@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import ContactCard from './contact-card';
 import Filter from './filter';
+import { deleteContact } from './reducers/contactReducer';
 import { sortData } from './helpers';
 import './contact-list.css';
 
 const ContactList = () => {
+  const dispatch = useDispatch();
   const [isSortOrderASC, setIsSortOrderASC] = useState(true);
   const contacts = useSelector(state => state.contacts);
   const currentFilter = useSelector(state => state.filter);
@@ -19,6 +21,10 @@ const ContactList = () => {
 
   const handleSortOnClick = () => {
     setIsSortOrderASC(!isSortOrderASC);
+  };
+
+  const handleDeleteContact = id => {
+    dispatch(deleteContact(id));
   };
 
   return (
@@ -35,7 +41,7 @@ const ContactList = () => {
       </div>
       <div className="contact-list">
         {sortData(filteredContacts, 'firstName', isSortOrderASC ? 'ASC' : 'DESC')
-          .map(contact => <ContactCard key={contact.id} contact={contact} />)}
+          .map(contact => <ContactCard key={contact.id} contact={contact} handleDeleteContact={handleDeleteContact} />)}
       </div>
     </div>
   );

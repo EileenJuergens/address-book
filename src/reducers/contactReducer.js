@@ -1,11 +1,13 @@
-import { getAll, createNew } from '../services/contacts';
+import { getAll, createNew, deleteOne } from '../services/contacts';
 
 const contactReducer = (state = [], action) => {
   switch (action.type) {
     case 'INIT_CONTACTS':
-      return action.data;
+      return action.payload;
     case 'NEW_CONTACT':
-      return [...state, action.data];
+      return [...state, action.payload];
+    case 'DELETE_CONTACT':
+      return state.filter(contact => contact.id !== action.payload);
     default:
       return state;
   }
@@ -16,7 +18,7 @@ export const initializeContacts = () => async dispatch => {
 
   dispatch({
     type: 'INIT_CONTACTS',
-    data: contacts
+    payload: contacts
   });
 };
 
@@ -25,7 +27,16 @@ export const createContact = content => async dispatch => {
 
   dispatch({
     type: 'NEW_CONTACT',
-    data: newContact
+    payload: newContact
+  });
+};
+
+export const deleteContact = id => async dispatch => {
+  await deleteOne(id);
+
+  dispatch({
+    type: 'DELETE_CONTACT',
+    payload: id
   });
 };
 

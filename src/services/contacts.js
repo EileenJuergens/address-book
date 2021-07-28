@@ -24,3 +24,8 @@ export const createNew = async ({ firstName, lastName, streetName, zipCode, city
   const response = await axios.post(baseUrl, object);
   return response.data;
 };
+
+export const deleteOne = async id => {
+  const response = await axios.delete(`${baseUrl}/${id}`);
+  return response.data;
+};

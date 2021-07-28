@@ -7,11 +7,11 @@
     padding: 8px;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .contact-card {
-    padding: 8px;
+    padding: 10px;
     background-color: #FAFAFA;
 }
 
@@ -21,11 +21,12 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .contact-card__name {
     display: flex;
+    justify-content: space-between;
     white-space: nowrap;
     max-width: 90%;
     overflow: hidden;
@@ -43,10 +44,26 @@
     margin-bottom: 8px;
 }
 
-.contact-card__address {
+.contact-card__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #757575;
     font-size: 13px;
+}
+
+.contact-card__details > p {
+    margin: 5px 10px;
+
+}
+
+.contact-card .contact-card__delete {
+    display: none;
+}
+
+.contact-card:hover .contact-card__delete {
+    display: block;
 }
