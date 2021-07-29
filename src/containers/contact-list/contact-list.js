@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import ContactCard from './contact-card';
-import Filter from './filter';
-import { deleteContact } from './reducers/contactReducer';
-import { sortData } from './helpers';
+import ContactCard from '../../components/contact-card/contact-card';
+import Filter from '../../filter';
+import { deleteContact } from '../../reducers/contactReducer';
+import { sortData } from '../../helpers';
 import './contact-list.css';
 
 const ContactList = () => {

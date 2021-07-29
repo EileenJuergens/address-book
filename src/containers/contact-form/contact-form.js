@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { Field, reduxForm } from 'redux-form';
 import { useDispatch } from 'react-redux';
-import ReduxInputField from './redux-input-field';
-import Button from './button';
-import { createContact } from './reducers/contactReducer';
+import ReduxInputField from '../../components/redux-input-field/redux-input-field';
+import Button from '../../components/button/button';
+import { createContact } from '../../reducers/contactReducer';
 import './contact-form.css';
 
 function ContactFrom({ handleSubmit, pristine, reset, submitting }) {

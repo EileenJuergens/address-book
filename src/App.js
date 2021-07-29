@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { initializeContacts } from './reducers/contactReducer';
-import ContactList from './contact-list';
-import ContactForm from './contact-form';
+import ContactList from './containers/contact-list/contact-list';
+import ContactForm from './containers/contact-form/contact-form';
 import './app.css';
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="App">
-      <h1>Address Book</h1>
+    <>
+      <h1 className="app__header">Address Book</h1>
       <ContactForm />
       <ContactList />
-    </div>
+    </>
   );
 }
 

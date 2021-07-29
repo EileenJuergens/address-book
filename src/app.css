@@ -6,3 +6,9 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.app__header {
+    display: flex;
+    justify-content: center;
+    color: #555555;
+}
