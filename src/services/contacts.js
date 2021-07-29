@@ -20,7 +20,6 @@ export const createNew = async ({ firstName, lastName, streetName, zipCode, city
     phoneNumber,
     email
   };
-
   const response = await axios.post(baseUrl, object);
   return response.data;
 };

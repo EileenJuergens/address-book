@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ContactCard from '../../components/contact-card/contact-card';
-import Filter from '../../filter';
-import { deleteContact } from '../../reducers/contactReducer';
+import Filter from '../filter/filter';
+import { initializeContacts, deleteContact } from '../../reducers/contactReducer';
 import { sortData } from '../../helpers';
 import './contact-list.css';
 
@@ -11,6 +11,10 @@ const ContactList = () => {
   const [isSortOrderASC, setIsSortOrderASC] = useState(true);
   const contacts = useSelector(state => state.contacts);
   const currentFilter = useSelector(state => state.filter);
+
+  useEffect(() => {
+    dispatch(initializeContacts());
+  }, [dispatch]);
 
   const filteredContacts = contacts.filter(contact => {
     const fullName = `${contact.firstName} ${contact.lastName}`;

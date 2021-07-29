@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { filterChange } from './reducers/filterReducer';
-import './components/redux-input-field/redux-input-field.css';
+import { filterChange } from '../../reducers/filterReducer';
+import '../../components/redux-input-field/redux-input-field.css';
 
 const Filter = ({ placeholder }) => {
   const dispatch = useDispatch();
