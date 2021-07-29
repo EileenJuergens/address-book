@@ -17,11 +17,11 @@ function ReduxInputField({ placeholder = '', input = '', name, type = 'text', la
   return (
     <div className="input-field-container">
       {label
-                && (
-                <label htmlFor={id} className="input-field-label">
-                  {label}
-                </label>
-                )}
+        && (
+          <label htmlFor={id} className="input-field-label">
+            {label}
+          </label>
+        )}
       <input
         id={id}
         type={type}

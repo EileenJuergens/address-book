@@ -76,6 +76,7 @@ function ContactFrom({ handleSubmit, pristine, reset, submitting }) {
           <div className="contact-form__select-box">
             <Field
               name="email"
+              type="email"
               component={ReduxInputField}
               label="email"
               placeholder="Insert email"
